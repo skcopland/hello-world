@@ -26,8 +26,8 @@
     <br>
     <h3>Some other things about you:</h3>
     <div><b>Incognito:</b> <span id="incognito"></span></div>
-    <div><b>URL:</b> <span id="url"></span></div>
-    <div><b>Referring URL:</b> <span id="clientReferrer"></span></div>
+    <div><b>URL:</b> <span id="device"></span></div>
+    <div><b>Referring URL:</b> <span id="timezone"></span></div>
     <div><b>City:</b> <span id="city"></span></div>
     <div><b>Browser Name:</b> <span id="browserName"></span></div>
     <div><b>Bot Probability:</b> <span id="botProbability"></span></div>
@@ -39,17 +39,17 @@
     visitorIdSpan.innerHTML = response.visitorId; 
 
     document.getElementById("incognito").innerHTML = response.incognito;
-    document.getElementById("url").innerHTML = response.url;
-    document.getElementById("clientReferrer").innerHTML = response.clientReferrer;
-    document.getElementById("city").innerHTML = response.city;
+    document.getElementById("device").innerHTML = response.device;
+    document.getElementById("timezone").innerHTML = response.timezone;
+    document.getElementById("city").innerHTML = response.city.name;
     document.getElementById("browserName").innerHTML = response.browserName;
     document.getElementById("botProbability").innerHTML = response.botProbability;
     
   console.log(response.visitorId); 
     console.log(response.incognito); 
-    console.log(response.url); 
-    console.log(response.clientReferrer); 
-    console.log(response.city); 
+    console.log(response.device); 
+    console.log(response.timezone); 
+    console.log(response.city.name); 
     console.log(response.browserName); 
     console.log(response.botProbability); 
 
