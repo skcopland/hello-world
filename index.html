@@ -46,7 +46,13 @@
     document.getElementById("botProbability").innerHTML = response.botProbability;
     
   console.log(response.visitorId); 
- 
+    console.log(response.incognito); 
+    console.log(response.url); 
+    console.log(response.clientReferrer); 
+    console.log(response.city); 
+    console.log(response.browserName); 
+    console.log(response.botProbability); 
+
    
     if (response.visitorId === "uJ8QAnfUQwbutuJgiMNe" || response.visitorId === "TBD" ) {
       document.getElementById("decision").innerHTML = "SAVANNAH";
