@@ -26,9 +26,7 @@
     <br>
     <h3>Some other things about you:</h3>
     <div><b>Incognito:</b> <span id="incognito"></span></div>
-    <div><b>URL:</b> <span id="device"></span></div>
-    <div><b>Referring URL:</b> <span id="timezone"></span></div>
-    <div><b>City:</b> <span id="city"></span></div>
+    <div><b>Device:</b> <span id="device"></span></div>
     <div><b>Browser Name:</b> <span id="browserName"></span></div>
     <div><b>Bot Probability:</b> <span id="botProbability"></span></div>
   </div>
@@ -40,8 +38,6 @@
 
     document.getElementById("incognito").innerHTML = response.incognito;
     document.getElementById("device").innerHTML = response.device;
-    document.getElementById("timezone").innerHTML = response.timezone;
-    document.getElementById("city").innerHTML = response.ipLocation;
     document.getElementById("browserName").innerHTML = response.browserName;
     document.getElementById("botProbability").innerHTML = response.botProbability;
     
