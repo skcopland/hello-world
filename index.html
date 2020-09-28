@@ -2,7 +2,7 @@
   
 <script>
   window.fpLayer = window.fpLayer || [];
-  function fp({callbackData: true}) { fpLayer.push(arguments); }
+  function fp() { fpLayer.push(arguments); }
   fp('config', 'client', 'x4744iJu3pV8xM7DDmwm');
   // This configuration parameter will send the data automatically
   // on every page view.
@@ -34,7 +34,7 @@
   </div>
   
 <script>
-  FP.send().then(function(response){
+  FP.send({callbackData: true}).then(function(response){
     const visitorIdSpan = document.getElementById("visitor_id");
     visitorIdSpan.innerHTML = response.visitorId; 
 
