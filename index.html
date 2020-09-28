@@ -9,7 +9,7 @@
   fp('config', 'autoSend', true);
 </script>
 <script async src="https://cdn.fpjs.io/@2/fp.js"></script>
-  
+ 
 </head>
 <html>
 <body>
@@ -17,5 +17,12 @@
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
+<script>
+  FP.send().then(function(response){
+  console.log(response.visitorId);
+});
+</script>
+  
+  
 </body>
 </html>
