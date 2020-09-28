@@ -17,8 +17,14 @@
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
+  <div>
+    Your VisitorId: <span id="visitor_id"></span>
+  </div>
+  
 <script>
   FP.send().then(function(response){
+    const visitorIdSpan = document.getElementById("visitor_id");
+    visitorIdSpan.innerHTML(response.visitorId);
   console.log(response.visitorId);
 });
 </script>
