@@ -24,7 +24,7 @@
 <script>
   FP.send().then(function(response){
     const visitorIdSpan = document.getElementById("visitor_id");
-    visitorIdSpan.innerHTML(response.visitorId);
+    visitorIdSpan.innerHTML = response.visitorId;
   console.log(response.visitorId);
 });
 </script>
