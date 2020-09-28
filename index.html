@@ -21,7 +21,7 @@
     Your VisitorId: <span id="visitor_id"></span>
     Savannah's Desktop VisitorId: uJ8QAnfUQwbutuJgiMNe
     Savannah's Mobile VisitorId: TBD
-    ARE YOU SAVANNAH? <span id="decision"></span>
+    You are... <span id="decision"></span>
   </div>
   
 <script>
@@ -35,9 +35,9 @@
  
    
     if (response.visitorId === "uJ8QAnfUQwbutuJgiMNe" || response.visitorId === "TBD" ) {
-  document.getElementById("decision").innerHTML = "YES"
+  document.getElementById("decision").innerHTML = "SAVANNAH"
  else 
- document.getElementById("decision").innerHTML = "NO"
+ document.getElementById("decision").innerHTML = "NOT SAVANNAH"
 } ;
   
 });
