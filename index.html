@@ -41,7 +41,7 @@
     document.getElementById("incognito").innerHTML = response.incognito;
     document.getElementById("device").innerHTML = response.device;
     document.getElementById("timezone").innerHTML = response.timezone;
-    document.getElementById("city").innerHTML = response.city('name');
+    document.getElementById("city").innerHTML = response.ipLocation('city', 'name');
     document.getElementById("browserName").innerHTML = response.browserName;
     document.getElementById("botProbability").innerHTML = response.botProbability;
     
@@ -49,7 +49,7 @@
     console.log(response.incognito); 
     console.log(response.device); 
     console.log(response.timezone); 
-    console.log(response.city('name')); 
+    console.log(response.ipLocation('city', 'name')); 
     console.log(response.browserName); 
     console.log(response.botProbability); 
 
