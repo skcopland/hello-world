@@ -14,21 +14,36 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1>Are You Savannah?</h1>
+<p>Only one way to find out... Fingerprint JS Pro!</p>
 
   <div>
     Your VisitorId: <span id="visitor_id"></span>
+    Savannah's Desktop VisitorId: uJ8QAnfUQwbutuJgiMNe
+    Savannah's Mobile VisitorId: TBD
+    ARE YOU SAVANNAH? <span id="decision"></span>
   </div>
   
 <script>
   FP.send().then(function(response){
     const visitorIdSpan = document.getElementById("visitor_id");
-    visitorIdSpan.innerHTML = response.visitorId;
-  console.log(response.visitorId);
+    visitorIdSpan.innerHTML = response.visitorId; 
+    document.getElementById("sav_desktop_id").innerHTML = "uJ8QAnfUQwbutuJgiMNe"
+    document.getElementById("sav_mobile_id").innerHTML = "TBD"
+    
+  console.log(response.visitorId); 
+ 
+   
+    if (response.visitorId === "uJ8QAnfUQwbutuJgiMNe" || response.visitorId === "TBD" ) {
+  document.getElementById("decision").innerHTML = "YES"
+ else 
+ document.getElementById("decision").innerHTML = "NO"
+} ;
+  
 });
 </script>
-  
+
+
   
 </body>
 </html>
